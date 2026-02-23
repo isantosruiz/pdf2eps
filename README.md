@@ -8,7 +8,7 @@ Aplicación web en Python para convertir PDF a EPS y descargar el resultado.
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-flask --app api/index.py --debug run
+flask --app app.py --debug run
 ```
 
 Abrir `http://127.0.0.1:5000`.
@@ -17,7 +17,7 @@ Abrir `http://127.0.0.1:5000`.
 
 1. Crear un proyecto nuevo en Vercel apuntando a este repositorio.
 2. Vercel instalará dependencias desde `requirements.txt`.
-3. `vercel.json` enruta todas las solicitudes a `api/index.py`.
+3. Vercel detecta el preset Flask y usa `app.py` como entrada.
 
 ## Notas
 

@@ -248,6 +248,3 @@ def convert_pdf_to_eps():
         download_name=f"{base_name}_eps.zip",
         mimetype="application/zip",
     )
-
-
-# Vercel looks for `app` in api/*.py
